@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\GetRoomTypesResp;
-use webbeds\hotel_api_sdk\model\RoomType;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\GetRoomTypesResp;
+use Webbeds\HotelApiSdk\Model\RoomType;
 use PHPUnit\Framework\TestCase;
 
 class RoomTypeTest extends TestCase
@@ -80,7 +80,7 @@ class RoomTypeTest extends TestCase
      */
     public function testRoomTypesReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\GetRoomTypes();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\GetRoomTypes();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;
@@ -108,7 +108,7 @@ class RoomTypeTest extends TestCase
         $this->assertEquals((string)$xmlResp->roomTypes->roomType[0]->name, "Single room");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetRoomTypes");
 
-        $this->assertEquals(get_class($native), "webbeds\hotel_api_sdk\messages\search\GetRoomTypesResp");
+        $this->assertEquals(get_class($native), "Webbeds\HotelApiSdk\Messages\Search\GetRoomTypesResp");
         return $native;
     }
 

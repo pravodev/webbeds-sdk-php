@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\GetFeaturesResp;
-use webbeds\hotel_api_sdk\model\Feature;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\GetFeaturesResp;
+use Webbeds\HotelApiSdk\Model\Feature;
 use PHPUnit\Framework\TestCase;
 
 class FeatureTest extends TestCase
@@ -85,7 +85,7 @@ class FeatureTest extends TestCase
      */
     public function testFeaturesReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\GetFeatures();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\GetFeatures();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;

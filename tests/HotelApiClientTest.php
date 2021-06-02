@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\GetLanguagesResp;
-use webbeds\hotel_api_sdk\model\Language;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\GetLanguagesResp;
+use Webbeds\HotelApiSdk\Model\Language;
 use PHPUnit\Framework\TestCase;
 
 class HotelApiClientTest extends TestCase
@@ -74,7 +74,7 @@ class HotelApiClientTest extends TestCase
      */
     public function testLanguagesReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\GetLanguages();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\GetLanguages();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;
@@ -101,7 +101,7 @@ class HotelApiClientTest extends TestCase
         $this->assertEquals((string)$xmlResp->languages->language[0]->name, "English");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetLanguages");
 
-        $this->assertEquals(get_class($native), "webbeds\hotel_api_sdk\messages\search\GetLanguagesResp");
+        $this->assertEquals(get_class($native), "Webbeds\HotelApiSdk\Messages\Search\GetLanguagesResp");
         return $native;
     }
 

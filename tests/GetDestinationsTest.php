@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\GetDestinationsResp;
-use webbeds\hotel_api_sdk\model\search\Destination;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\GetDestinationsResp;
+use Webbeds\HotelApiSdk\Model\search\Destination;
 use PHPUnit\Framework\TestCase;
 
 class GetDestinationsTest extends TestCase
@@ -105,7 +105,7 @@ class GetDestinationsTest extends TestCase
      */
     public function testDestinationsReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\GetDestinations();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\GetDestinations();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;

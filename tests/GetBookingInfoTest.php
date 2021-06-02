@@ -22,10 +22,10 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\book\GetBookingInfoResp;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Book\GetBookingInfoResp;
 
 use PHPUnit\Framework\TestCase;
 
@@ -112,7 +112,7 @@ class GetBookingInfoTest extends TestCase
      */
     public function testGetBookingInfoReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\book\GetBookingInfo();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\book\GetBookingInfo();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;

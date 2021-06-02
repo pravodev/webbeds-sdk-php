@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\GetTransferTypesResp;
-use webbeds\hotel_api_sdk\model\TransferType;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\GetTransferTypesResp;
+use Webbeds\HotelApiSdk\Model\TransferType;
 use PHPUnit\Framework\TestCase;
 
 class GetTransferTypesTest extends TestCase
@@ -90,7 +90,7 @@ class GetTransferTypesTest extends TestCase
      */
     public function testTransferTypesReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\GetTransferTypes();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\GetTransferTypes();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;
@@ -119,7 +119,7 @@ class GetTransferTypesTest extends TestCase
         $this->assertEquals((string)$xmlResp->transferTypes->transferType[0]->name, "Private Taxi");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetTransferTypes");
 
-        $this->assertEquals(get_class($native), "webbeds\hotel_api_sdk\messages\search\GetTransferTypesResp");
+        $this->assertEquals(get_class($native), "Webbeds\HotelApiSdk\Messages\Search\GetTransferTypesResp");
         return $native;
     }
 

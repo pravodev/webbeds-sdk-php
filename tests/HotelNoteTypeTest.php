@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\GetHotelNoteTypesResp;
-use webbeds\hotel_api_sdk\model\HotelNoteType;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\GetHotelNoteTypesResp;
+use Webbeds\HotelApiSdk\Model\HotelNoteType;
 use PHPUnit\Framework\TestCase;
 
 class HotelNoteTypeTest extends TestCase
@@ -85,7 +85,7 @@ class HotelNoteTypeTest extends TestCase
      */
     public function testHotelNoteTypesReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\GetHotelNoteTypes();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\GetHotelNoteTypes();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;
@@ -113,7 +113,7 @@ class HotelNoteTypeTest extends TestCase
         $this->assertEquals((string)$xmlResp->noteTypes->noteType[0]->attributes()->text, "Pool closed");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetHotelNoteTypes");
 
-        $this->assertEquals(get_class($native), "webbeds\hotel_api_sdk\messages\search\GetHotelNoteTypesResp");
+        $this->assertEquals(get_class($native), "Webbeds\HotelApiSdk\Messages\Search\GetHotelNoteTypesResp");
         return $native;
     }
 

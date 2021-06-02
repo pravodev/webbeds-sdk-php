@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\search\SearchResp;
-use webbeds\hotel_api_sdk\model\Search;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Search\SearchResp;
+use Webbeds\HotelApiSdk\Model\Search;
 use PHPUnit\Framework\TestCase;
 
 class SearchTest extends TestCase
@@ -253,7 +253,7 @@ class SearchTest extends TestCase
      */
     public function testHotelsReq()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\search\Search();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\search\Search();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;
@@ -311,7 +311,7 @@ class SearchTest extends TestCase
         //simplexml_tree($xmlResp, true);
         $native = $this->apiClient->ConvertSimpleXMLToArray($xmlResp, "Search");
 
-        $this->assertEquals(get_class($native), "webbeds\hotel_api_sdk\messages\search\SearchResp");
+        $this->assertEquals(get_class($native), "Webbeds\HotelApiSdk\Messages\Search\SearchResp");
         return $native;
     }
 

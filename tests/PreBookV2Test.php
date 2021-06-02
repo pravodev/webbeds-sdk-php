@@ -22,11 +22,11 @@
  * #L%
  */
 
-use webbeds\hotel_api_sdk\HotelApiClient;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\messages\book\PreBookV2Resp;
-use webbeds\hotel_api_sdk\model\Book;
+use Webbeds\HotelApiSdk\HotelApiClient;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Messages\Book\PreBookV2Resp;
+use Webbeds\HotelApiSdk\Model\Book;
 use PHPUnit\Framework\TestCase;
 
 class PreBookV2Test extends TestCase
@@ -166,7 +166,7 @@ class PreBookV2Test extends TestCase
      */
     public function testPreBookV2Req()
     {
-        $reqData = new \webbeds\hotel_api_sdk\helpers\book\PreBookV2();
+        $reqData = new \Webbeds\HotelApiSdk\helpers\book\PreBookV2();
         
         $reqData->userName = $this->userName;
         $reqData->password = $this->password;
@@ -205,7 +205,7 @@ class PreBookV2Test extends TestCase
     {
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "PreBookV2");
 
-        $this->assertEquals(get_class($native), "webbeds\hotel_api_sdk\messages\book\PreBookV2Resp");
+        $this->assertEquals(get_class($native), "Webbeds\HotelApiSdk\Messages\Book\PreBookV2Resp");
        
         return $native;
     }
