@@ -3,14 +3,14 @@
     "description": "WebBeds Hotel-API SDK for PHP",
     "type": "library",
     "require": {
-        "php": ">= 5.2 <7.2",
+        "php": ">= 5.2",
         "zendframework/zend-http": "^2.4",
         "zendframework/zend-json": "^2.4",
         "nicmart/string-template": "v0.1.0",
         "zendframework/zend-config": "^2.4.1"
     },
     "require-dev": {
-        "php": ">= 5.2 <7.2",
+        "php": ">= 5.2",
         "zendframework/zend-http": "^2.4",
         "zendframework/zend-json": "^2.4",
         "phpdocumentor/phpdocumentor": "2.*",
