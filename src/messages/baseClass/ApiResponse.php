@@ -4,15 +4,15 @@
  * Date: 12/31/2018
  * Time: 11:40 PM
  */
-namespace webbeds\hotel_api_sdk\messages\baseClass;
+namespace Webbeds\HotelApiSdk\Messages\BaseClass;
 /**
  * Class FieldNotExists
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  */
 class FieldNotExists extends \Exception{}
 /**
  * Class ApiResponse
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  */
 abstract class ApiResponse
 {

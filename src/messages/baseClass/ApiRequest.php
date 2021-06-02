@@ -4,16 +4,16 @@
  * Date: 12/11/2018
  * Time: 12:40 PM
  */
-namespace webbeds\hotel_api_sdk\messages\baseClass;
+namespace Webbeds\HotelApiSdk\Messages\BaseClass;
 
-use webbeds\hotel_api_sdk\helpers\ApiHelper;
-use webbeds\hotel_api_sdk\types\ApiUri;
+use Webbeds\HotelApiSdk\Helpers\ApiHelper;
+use Webbeds\HotelApiSdk\Types\ApiUri;
 use Laminas\Http\Request;
 use Laminas\Uri\Http;
 use Laminas\Stdlib\Parameters;
 /**
  * Class ApiRequest This is abstract request class define how prepare final HTTP Request
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  */
 abstract class ApiRequest implements ApiCallTypes
 {

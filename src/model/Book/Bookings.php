@@ -5,14 +5,14 @@
  * Date: 11/12/2015
  * Time: 1:33 AM
  */
-namespace webbeds\hotel_api_sdk\model\book;
+namespace Webbeds\HotelApiSdk\Model\Book;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
-use webbeds\hotel_api_sdk\utility\UtilityHelper;
+use Webbeds\HotelApiSdk\Model\ApiModel;
+use Webbeds\HotelApiSdk\Utility\UtilityHelper;
 
 /**
  * Class Bookings
- * @package webbeds\hotel_api_sdk\model
+ * @package Webbeds\HotelApiSdk\Model
  * @property integer total Total number of Bookings
  */
 class Bookings extends ApiModel

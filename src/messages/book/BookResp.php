@@ -20,18 +20,18 @@
  * <http://www.gnu.org/licenses/lgpl-2.1.html>.
  * #L%
  */
-namespace webbeds\hotel_api_sdk\messages\book;
+namespace Webbeds\HotelApiSdk\Messages\Book;
 
-use webbeds\hotel_api_sdk\messages\baseClass\ApiResponse;
-use webbeds\hotel_api_sdk\model\common\PriceBreakdowns;
-use webbeds\hotel_api_sdk\model\common\CancellationPolicyIterator;
-use webbeds\hotel_api_sdk\model\common\Prices;
-use webbeds\hotel_api_sdk\model\book\Notes;
+use Webbeds\HotelApiSdk\Messages\BaseClass\ApiResponse;
+use Webbeds\HotelApiSdk\Model\Common\PriceBreakdowns;
+use Webbeds\HotelApiSdk\Model\Common\CancellationPolicyIterator;
+use Webbeds\HotelApiSdk\Model\Common\Prices;
+use Webbeds\HotelApiSdk\Model\Book\Notes;
 
 
 /**
  * Class BookResp
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  * @property Book search used for hotel content
  */
 class BookResp extends ApiResponse

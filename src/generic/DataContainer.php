@@ -5,16 +5,16 @@
  * Time: 11:15 AM
  */
 
-namespace webbeds\hotel_api_sdk\generic;
+namespace Webbeds\HotelApiSdk\Generic;
 /**
  * Class FieldNotValid. No valid field exception.
- * @package webbeds\hotel_api_sdk\generic
+ * @package Webbeds\HotelApiSdk\Generic
  */
 class FieldNotValid extends \Exception{}
 /**
  * Class DataContainer This is a generic data container. Used for messages and model data classes, can contains set of
  * keys. Can get and set magically with magic methods.
- * @package webbeds\hotel_api_sdk\generic
+ * @package Webbeds\HotelApiSdk\Generic
  */
 abstract class DataContainer
 {

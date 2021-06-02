@@ -5,9 +5,9 @@
  * Date: 07/09/2016
  * Time: 06:21 PM
  */
-namespace webbeds\hotel_api_sdk\model\book;
+namespace Webbeds\HotelApiSdk\Model\Book;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
+use Webbeds\HotelApiSdk\Model\ApiModel;
 
 class NoteIterator implements \Iterator
 {

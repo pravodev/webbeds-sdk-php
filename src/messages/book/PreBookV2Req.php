@@ -4,17 +4,17 @@
  * Date: 12/12/2018
  * Time: 01:12 PM
  */
-namespace webbeds\hotel_api_sdk\messages\book;
+namespace Webbeds\HotelApiSdk\Messages\Book;
 
-use webbeds\hotel_api_sdk\messages\baseClass\ApiRequest;
-use webbeds\hotel_api_sdk\types\ApiUri;
-use webbeds\hotel_api_sdk\helpers\book\PreBookV2;
+use Webbeds\HotelApiSdk\Messages\BaseClass\ApiRequest;
+use Webbeds\HotelApiSdk\Types\ApiUri;
+use Webbeds\HotelApiSdk\Helpers\Book\PreBookV2;
 use Laminas\Http\Request;
 
 
 /**
  * Class LanguageReq
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  */
 class PreBookV2Req extends ApiRequest
 {

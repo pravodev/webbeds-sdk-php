@@ -5,13 +5,13 @@
  * Date: 11/12/2015
  * Time: 1:33 AM
  */
-namespace webbeds\hotel_api_sdk\model\book;
+namespace Webbeds\HotelApiSdk\Model\Book;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
+use Webbeds\HotelApiSdk\Model\ApiModel;
 
 /**
  * Class Notes
- * @package webbeds\hotel_api_sdk\model\book
+ * @package Webbeds\HotelApiSdk\Model\Book
  * @property string node name
  * @property array field value
  */

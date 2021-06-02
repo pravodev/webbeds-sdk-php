@@ -20,14 +20,14 @@
  * <http://www.gnu.org/licenses/lgpl-2.1.html>.
  * #L%
  */
-namespace webbeds\hotel_api_sdk\messages\book;
+namespace Webbeds\HotelApiSdk\Messages\Book;
 
-use webbeds\hotel_api_sdk\messages\baseClass\ApiResponse;
-// use webbeds\hotel_api_sdk\model\book\Bookings;
+use Webbeds\HotelApiSdk\Messages\BaseClass\ApiResponse;
+// use Webbeds\HotelApiSdk\Model\Book\Bookings;
 
 /**
  * Class GetBookingInfoResp
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  * @property Book book used for hotel content
  */
 class GetBookingInfoResp extends ApiResponse

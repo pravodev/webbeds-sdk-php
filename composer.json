@@ -27,9 +27,9 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-        "psr-4": { "webbeds\\hotel_api_sdk\\": "src/" }
+        "psr-4": { "Webbeds\\HotelApiSdk\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "webbeds\\hotel_api_sdk\\Tests\\": "tests/" }
+        "psr-4": { "Webbeds\\HotelApiSdk\\Tests\\": "tests/" }
     }
 }

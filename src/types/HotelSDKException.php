@@ -5,13 +5,13 @@
  * Time: 11:15 AM
  */
 
-namespace webbeds\hotel_api_sdk\types;
+namespace Webbeds\HotelApiSdk\Types;
 
-use webbeds\hotel_api_sdk\model\AuditData;
+use Webbeds\HotelApiSdk\Model\AuditData;
 
 /**
  * Class HotelSDKException
- * @package webbeds\hotel_api_sdk\types
+ * @package Webbeds\HotelApiSdk\Types
  */
 class HotelSDKException extends \Exception
 {

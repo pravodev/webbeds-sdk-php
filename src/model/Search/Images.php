@@ -5,13 +5,13 @@
  * Date: 11/12/2015
  * Time: 1:33 AM
  */
-namespace webbeds\hotel_api_sdk\model\search;
+namespace Webbeds\HotelApiSdk\Model\Search;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
+use Webbeds\HotelApiSdk\Model\ApiModel;
 
 /**
  * Class Images
- * @package webbeds\hotel_api_sdk\model
+ * @package Webbeds\HotelApiSdk\Model
  * @property integer total Total number of Images
  */
 class Images extends ApiModel

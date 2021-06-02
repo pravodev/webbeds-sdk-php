@@ -4,10 +4,10 @@
  * Date: 12/11/2018
  * Time: 05:33 PM
  */
-namespace webbeds\hotel_api_sdk\messages\baseClass;
+namespace Webbeds\HotelApiSdk\Messages\BaseClass;
 /**
  * Interface ApiCallTypes
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  */
 interface ApiCallTypes
 {

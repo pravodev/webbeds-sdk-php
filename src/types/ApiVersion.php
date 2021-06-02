@@ -4,10 +4,10 @@
  * Date: 12/11/2018
  * Time: 11:15 AM
  */
-namespace webbeds\hotel_api_sdk\types;
+namespace Webbeds\HotelApiSdk\Types;
 /**
  * Interface ApiVersions. Define all available versions
- * @package webbeds\hotel_api_sdk\types
+ * @package Webbeds\HotelApiSdk\Types
  */
 interface ApiVersions {
 
@@ -18,7 +18,7 @@ interface ApiVersions {
 }
 /**
  * Class ApiVersion. Simple class define API version
- * @package webbeds\hotel_api_sdk\types
+ * @package Webbeds\HotelApiSdk\Types
  */
 class ApiVersion implements ApiVersions
 {

@@ -4,12 +4,12 @@
  * Date: 12/12/2018
  * Time: 01:09 PM
  */
-namespace webbeds\hotel_api_sdk\helpers\search;
+namespace Webbeds\HotelApiSdk\Helpers\Search;
 
-use webbeds\hotel_api_sdk\helpers\ApiHelper;
+use Webbeds\HotelApiSdk\Helpers\ApiHelper;
 /**
  * Class GetFeatures
- * @package webbeds\hotel_api_sdk\helpers
+ * @package Webbeds\HotelApiSdk\Helpers
 */
 class GetFeatures extends ApiHelper
 {

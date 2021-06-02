@@ -4,13 +4,13 @@
  * Date: 12/12/2018
  * Time: 01:09 PM
  */
-namespace webbeds\hotel_api_sdk\helpers\book;
+namespace Webbeds\HotelApiSdk\Helpers\Book;
 
-use webbeds\hotel_api_sdk\helpers\ApiHelper;
+use Webbeds\HotelApiSdk\Helpers\ApiHelper;
 
 /**
  * Class PreBookV2
- * @package webbeds\hotel_api_sdk\helpers\book
+ * @package Webbeds\HotelApiSdk\Helpers\Book
 */
 class PreBookV2 extends ApiHelper
 {

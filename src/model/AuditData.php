@@ -4,11 +4,11 @@
  * Date: 12/11/2018
  * Time: 11:15 AM
  */
-namespace webbeds\hotel_api_sdk\model;
+namespace Webbeds\HotelApiSdk\Model;
 
 /**
  * Class AuditData
- * @package webbeds\hotel_api_sdk\model
+ * @package Webbeds\HotelApiSdk\Model
  * @property double $processTime Server process time in miliseconds
  * @property \DateTime $timestamp Date/time when the requests has been processed. Always returned at spanish time
  * @property string $serverId Server code or ID(It is for internal use)

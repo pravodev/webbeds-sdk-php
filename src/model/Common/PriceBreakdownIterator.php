@@ -5,9 +5,9 @@
  * Date: 11/12/2015
  * Time: 2:21 AM
  */
-namespace webbeds\hotel_api_sdk\model\common;
+namespace Webbeds\HotelApiSdk\Model\Common;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
+use Webbeds\HotelApiSdk\Model\ApiModel;
 
 class PriceBreakdownIterator implements \Iterator
 {

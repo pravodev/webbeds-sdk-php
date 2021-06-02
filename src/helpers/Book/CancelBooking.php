@@ -4,12 +4,12 @@
  * Date: 12/12/2018
  * Time: 01:09 PM
  */
-namespace webbeds\hotel_api_sdk\helpers\book;
+namespace Webbeds\HotelApiSdk\Helpers\Book;
 
-use webbeds\hotel_api_sdk\helpers\ApiHelper;
+use Webbeds\HotelApiSdk\Helpers\ApiHelper;
 /**
  * Class CancelBooking
- * @package webbeds\hotel_api_sdk\helpers
+ * @package Webbeds\HotelApiSdk\Helpers
 */
 class CancelBooking extends ApiHelper
 {

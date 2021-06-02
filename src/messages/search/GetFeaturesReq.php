@@ -4,17 +4,17 @@
  * Date: 12/12/2018
  * Time: 01:12 PM
  */
-namespace webbeds\hotel_api_sdk\messages\search;
+namespace Webbeds\HotelApiSdk\Messages\Search;
 
-use webbeds\hotel_api_sdk\messages\baseClass\ApiRequest;
-use webbeds\hotel_api_sdk\types\ApiUri;
-use webbeds\hotel_api_sdk\helpers\search\GetFeatures;
+use Webbeds\HotelApiSdk\Messages\BaseClass\ApiRequest;
+use Webbeds\HotelApiSdk\Types\ApiUri;
+use Webbeds\HotelApiSdk\Helpers\Search\GetFeatures;
 use Laminas\Http\Request;
 
 
 /**
  * Class GetFeatureReq
- * @package webbeds\hotel_api_sdk\messages
+ * @package Webbeds\HotelApiSdk\Messages
  */
 class GetFeaturesReq extends ApiRequest
 {

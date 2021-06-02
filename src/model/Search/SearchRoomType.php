@@ -5,13 +5,13 @@
  * Date: 11/4/2015
  * Time: 8:43 PM
  */
-namespace webbeds\hotel_api_sdk\model\search;
+namespace Webbeds\HotelApiSdk\Model\Search;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
+use Webbeds\HotelApiSdk\Model\ApiModel;
 
 /**
  * Class SearchRoomType
- * @package webbeds\hotel_api_sdk\model
+ * @package Webbeds\HotelApiSdk\Model
  * @property array data paramters
  */
 class SearchRoomType extends ApiModel

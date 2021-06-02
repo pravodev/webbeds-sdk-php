@@ -5,7 +5,7 @@
  * Date: 07/09/2016
  * Time: 06:21 PM
  */
-namespace webbeds\hotel_api_sdk\model\search;
+namespace Webbeds\HotelApiSdk\Model\Search;
 
 class SearchHotelIterator implements \Iterator
 {

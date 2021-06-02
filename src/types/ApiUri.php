@@ -4,14 +4,14 @@
  * Date: 12/11/2018
  * Time: 12:49 PM
  */
-namespace webbeds\hotel_api_sdk\types;
+namespace Webbeds\HotelApiSdk\Types;
 
 use Laminas\Uri\Http;
 use StringTemplate;
 
 /**
  * Class ApiUri
- * @package webbeds\hotel_api_sdk\types
+ * @package Webbeds\HotelApiSdk\Types
  */
 class ApiUri extends Http
 {

@@ -22,14 +22,14 @@
  * #L%
  */
 
-namespace webbeds\hotel_api_sdk;
+namespace Webbeds\HotelApiSdk;
 
-use webbeds\hotel_api_sdk\model\AuditData;
-use webbeds\hotel_api_sdk\types\ApiVersion;
-use webbeds\hotel_api_sdk\types\ApiVersions;
-use webbeds\hotel_api_sdk\types\HotelSDKException;
-use webbeds\hotel_api_sdk\messages\baseClass\ApiRequest;
-use webbeds\hotel_api_sdk\utility\UtilityHelper;
+use Webbeds\HotelApiSdk\Model\AuditData;
+use Webbeds\HotelApiSdk\Types\ApiVersion;
+use Webbeds\HotelApiSdk\Types\ApiVersions;
+use Webbeds\HotelApiSdk\Types\HotelSDKException;
+use Webbeds\HotelApiSdk\Messages\BaseClass\ApiRequest;
+use Webbeds\HotelApiSdk\Utility\UtilityHelper;
 
 use Laminas\Http\Client;
 use Laminas\Http\Request;

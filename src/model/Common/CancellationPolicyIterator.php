@@ -5,9 +5,9 @@
  * Date: 07/09/2016
  * Time: 06:21 PM
  */
-namespace webbeds\hotel_api_sdk\model\common;
+namespace Webbeds\HotelApiSdk\Model\Common;
 
-use webbeds\hotel_api_sdk\model\ApiModel;
+use Webbeds\HotelApiSdk\Model\ApiModel;
 
 class CancellationPolicyIterator implements \Iterator
 {
