@@ -1,5 +1,5 @@
 {
-    "name": "webbeds/hotel-api-sdk-php",
+    "name": "pravodev/hotel-api-sdk-php",
     "description": "WebBeds Hotel-API SDK for PHP",
     "type": "library",
     "require": {
