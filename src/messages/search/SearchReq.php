@@ -9,7 +9,7 @@ namespace webbeds\hotel_api_sdk\messages\search;
 use webbeds\hotel_api_sdk\messages\baseClass\ApiRequest;
 use webbeds\hotel_api_sdk\types\ApiUri;
 use webbeds\hotel_api_sdk\helpers\search\Search;
-use Zend\Http\Request;
+use Laminas\Http\Request;
 
 
 /**

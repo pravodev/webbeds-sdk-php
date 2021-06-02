@@ -6,7 +6,7 @@
  */
 namespace webbeds\hotel_api_sdk\types;
 
-use Zend\Uri\Http;
+use Laminas\Uri\Http;
 use StringTemplate;
 
 /**

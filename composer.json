@@ -3,17 +3,14 @@
     "description": "WebBeds Hotel-API SDK for PHP",
     "type": "library",
     "require": {
-        "php": ">= 5.2",
-        "zendframework/zend-http": "^2.4",
-        "zendframework/zend-json": "^2.4",
+        "php": ">= 7.2",
+        "laminas/laminas-http": "^2.1",
+        "laminas/laminas-json": "^3.1",
         "nicmart/string-template": "v0.1.0",
-        "zendframework/zend-config": "^2.4.1"
+        "laminas/laminas-config": "^3.3"
     },
     "require-dev": {
-        "php": ">= 5.2",
-        "zendframework/zend-http": "^2.4",
-        "zendframework/zend-json": "^2.4",
-        "phpdocumentor/phpdocumentor": "2.*",
+        "php": ">= 7.2",
         "phpunit/phpunit": "7.1",
         "imsop/simplexml_debug": "^1.0"
     },

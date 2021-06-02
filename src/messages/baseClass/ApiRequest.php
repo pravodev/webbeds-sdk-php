@@ -8,9 +8,9 @@ namespace webbeds\hotel_api_sdk\messages\baseClass;
 
 use webbeds\hotel_api_sdk\helpers\ApiHelper;
 use webbeds\hotel_api_sdk\types\ApiUri;
-use Zend\Http\Request;
-use Zend\Uri\Http;
-use Zend\Stdlib\Parameters;
+use Laminas\Http\Request;
+use Laminas\Uri\Http;
+use Laminas\Stdlib\Parameters;
 /**
  * Class ApiRequest This is abstract request class define how prepare final HTTP Request
  * @package webbeds\hotel_api_sdk\messages

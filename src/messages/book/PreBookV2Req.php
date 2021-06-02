@@ -9,7 +9,7 @@ namespace webbeds\hotel_api_sdk\messages\book;
 use webbeds\hotel_api_sdk\messages\baseClass\ApiRequest;
 use webbeds\hotel_api_sdk\types\ApiUri;
 use webbeds\hotel_api_sdk\helpers\book\PreBookV2;
-use Zend\Http\Request;
+use Laminas\Http\Request;
 
 
 /**

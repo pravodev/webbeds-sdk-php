@@ -31,10 +31,10 @@ use webbeds\hotel_api_sdk\types\HotelSDKException;
 use webbeds\hotel_api_sdk\messages\baseClass\ApiRequest;
 use webbeds\hotel_api_sdk\utility\UtilityHelper;
 
-use Zend\Http\Client;
-use Zend\Http\Request;
-use Zend\Http\Response;
-use Zend\Uri\UriFactory;
+use Laminas\Http\Client;
+use Laminas\Http\Request;
+use Laminas\Http\Response;
+use Laminas\Uri\UriFactory;
 
 class HotelApiClient
 {

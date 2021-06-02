@@ -7,7 +7,7 @@
 namespace webbeds\hotel_api_sdk\helpers;
 
 use webbeds\hotel_api_sdk\generic\DataContainer;
-use Zend\Json\Json;
+use Laminas\Json\Json;
 
 abstract class ApiHelper extends DataContainer
 {
