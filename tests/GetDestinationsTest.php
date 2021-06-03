@@ -135,7 +135,7 @@ class GetDestinationsTest extends TestCase
         $this->assertEquals((string)$xmlResp->Destinations->Destination[0]->DestinationName, "Hsinchu");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetDestinations");
 
-        $this->assertEquals(get_class($native), "webbeds\\hotel_api_sdk\\messages\\$this->lib\\GetDestinationsResp");
+        $this->assertEquals(get_class($native), "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\GetDestinationsResp");
         return $native;
     }
 

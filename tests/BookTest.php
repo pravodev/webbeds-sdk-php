@@ -387,7 +387,7 @@ class HotelApiClientTest extends TestCase
     {
         // TODO: parsing prices have oroblem with attribute missing 
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "Book");
-        $this->assertEquals(get_class($native), "webbeds\\hotel_api_sdk\\messages\\$this->lib\\BookResp");
+        $this->assertEquals(get_class($native), "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\BookResp");
         
         return $native;
     }

@@ -140,7 +140,7 @@ class GetBookingInfoTest extends TestCase
     {
         //simplexml_tree($xmlResp, true);
         $native = $this->apiClient->ConvertSimpleXMLToArray($xmlResp, "GetBookingInfo");
-        $this->assertEquals(get_class($native), "webbeds\\hotel_api_sdk\\messages\\$this->lib\\GetBookingInfoResp");
+        $this->assertEquals(get_class($native), "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\GetBookingInfoResp");
         return $native;
     }
     /**

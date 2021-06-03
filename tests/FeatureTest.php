@@ -113,7 +113,7 @@ class FeatureTest extends TestCase
         $this->assertEquals((string)$xmlResp->features->feature[0]->attributes()->name, "Air Conditioning");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetFeatures");
 
-        $this->assertEquals(get_class($native), "webbeds\\hotel_api_sdk\\messages\\$this->lib\\GetFeaturesResp");
+        $this->assertEquals(get_class($native), "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\GetFeaturesResp");
         return $native;
     }
 

@@ -112,7 +112,7 @@ class CancelBookingTest extends TestCase
     public function testCancelBookingXMLResp(\SimpleXMLElement $xmlResp)
     {
         $native = $this->apiClient->ConvertSimpleXMLToArray($xmlResp, "CancelBooking");
-        $this->assertEquals(get_class($native), "webbeds\\hotel_api_sdk\\messages\\$this->lib\\CancelBookingResp");
+        $this->assertEquals(get_class($native), "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\CancelBookingResp");
         return $native;
     }
     /**

@@ -100,7 +100,7 @@ class HotelApiClient
             		"timeout" => $timeout
             ]);
         }
-        UriFactory::registerScheme("https","webbeds\\hotel_api_sdk\\types\\ApiUri");
+        UriFactory::registerScheme("https","Webbeds\\HotelApiSdk\\Types\\ApiUri");
         $this->apiUri = UriFactory::factory($url);
         $this->apiUri->prepare($version, $lib, $nonStatic);
     }
@@ -114,12 +114,12 @@ class HotelApiClient
     public function __call($sdkMethod, array $args=null)
     {
         $this->lastSdkMethod = $sdkMethod;
-        $sdkClassReq = "webbeds\\hotel_api_sdk\\messages\\".$this->lib."\\".$sdkMethod."Req";
-        $sdkClassResp = "webbeds\\hotel_api_sdk\\messages\\".$this->lib."\\".$sdkMethod."Resp";
+        $sdkClassReq = "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\".$sdkMethod."Req";
+        $sdkClassResp = "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\".$sdkMethod."Resp";
         if (!class_exists($sdkClassReq) && !class_exists($sdkClassResp)){
             throw new HotelSDKException("$this->lib\\$sdkClassReq or $this->lib\\$sdkClassResp not implemented in SDK");
         }
-        //if($sdkClassReq == "webbeds\\hotel_api_sdk\\messages\\BookingConfirmReq"){
+        //if($sdkClassReq == "Webbeds\\HotelApiSdk\\Messages\\BookingConfirmReq"){
         //	$req = new $sdkClassReq($this->apiUri, $args[0]);
         //}else{
 	        if ($args !== null && count($args) > 0){
@@ -176,7 +176,7 @@ class HotelApiClient
      */
     public function ConvertXMLToNative($xml_string, $sdkMethod)
     {
-        $sdkClassResp = "webbeds\\hotel_api_sdk\\messages\\".$this->lib."\\".$sdkMethod."Resp";
+        $sdkClassResp = "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\".$sdkMethod."Resp";
         //print_r($xml_string);
         $array = UtilityHelper::ConvertXMLToArray2($xml_string);
 
@@ -188,7 +188,7 @@ class HotelApiClient
      */
     public function ConvertSimpleXMLToArray(\SimpleXMLElement $xml_string, $sdkMethod)
     {
-        $sdkClassResp = "webbeds\\hotel_api_sdk\\messages\\".$this->lib."\\".$sdkMethod."Resp";
+        $sdkClassResp = "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\".$sdkMethod."Resp";
         //$data = UtilityHelper::XMLtoArray($xml_string);
         return new $sdkClassResp($xml_string);
     }

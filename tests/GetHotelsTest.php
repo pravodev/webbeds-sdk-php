@@ -154,7 +154,7 @@ class GetHotelsTest extends TestCase
         //$this->assertEquals((string)$xmlResp->hotels->hotel[0]->name, "6 Wilkes Barre Motel");
         $native = $this->apiClient->ConvertXMLToNative($xmlResp, "GetHotels");
 
-        $this->assertEquals(get_class($native), "webbeds\\hotel_api_sdk\\messages\\$this->lib\\GetHotelsResp");
+        $this->assertEquals(get_class($native), "Webbeds\\HotelApiSdk\\Messages\\".ucwords($this->lib)."\\GetHotelsResp");
         return $native;
     }
 
