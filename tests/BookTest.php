@@ -71,9 +71,9 @@ class HotelApiClientTest extends TestCase
      */
     private $destinationId;
     /**
-     * @var string hotelIds HotelIds is webbeds's hotelIds, such as 48747, 19614, 29065 
+     * @var string hotelIDs HotelIds is webbeds's hotelIDs, such as 48747, 19614, 29065 
      */
-    private $hotelIds;
+    private $hotelIDs;
     /**
      * @var integer numberOfAdults REQUIRED NumberOfAdults is the number of adults
      */

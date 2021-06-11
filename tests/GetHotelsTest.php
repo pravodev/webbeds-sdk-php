@@ -52,13 +52,13 @@ class GetHotelsTest extends TestCase
      */
     private $destination;
     /**
-     * @var string hotelIds hotelIds to specify a hotel
+     * @var string hotelIDs hotelIDs to specify a hotel
      */
-    private $hotelIds;
+    private $hotelIDs;
     /**
-     * @var string resortIds resortIds to specify a resrt
+     * @var string resortIDs resortIDs to specify a resrt
      */
-    private $resortIds;
+    private $resortIDs;
     /**
      * @var string accommodationTypes accommodationTypes to specify an accommodation type
      */
@@ -107,8 +107,8 @@ class GetHotelsTest extends TestCase
 
         $this->language = 'en';
         $this->destination = '2327';
-        $this->hotelIds = ''; //'126267';
-        $this->resortIds ='';
+        $this->hotelIDs = ''; //'126267';
+        $this->resortIDs ='';
         $this->accommodationTypes ='';
         $this->sortBy = '';
         $this->sortOrder = '';
@@ -126,8 +126,8 @@ class GetHotelsTest extends TestCase
         $reqData->password = $this->password;
         $reqData->language = $this->language;
         $reqData->destination = $this->destination;
-        $reqData->hotelIds = $this->hotelIds;
-        $reqData->resortIds = $this->resortIds;
+        $reqData->hotelIDs = $this->hotelIDs;
+        $reqData->resortIDs = $this->resortIDs;
         $reqData->accommodationTypes = $this->accommodationTypes;
         $reqData->sortBy = $this->sortBy;
         $reqData->sortOrder = $this->sortOrder;

@@ -72,9 +72,9 @@ class SearchTest extends TestCase
      */
     private $destinationId;
     /**
-     * @var string hotelIds HotelIds is webbeds's hotelIds, such as 48747, 19614, 29065 
+     * @var string hotelIDs HotelIds is webbeds's hotelIDs, such as 48747, 19614, 29065 
      */
-    private $hotelIds;
+    private $hotelIDs;
     /**
      * @var integer numberOfAdults REQUIRED NumberOfAdults is the number of adults
      */
@@ -215,8 +215,8 @@ class SearchTest extends TestCase
         $this->numberOfRooms = 1;
         $this->destination = '';
         $this->destinationId = '552';   // 552
-        $this->hotelIds = ''; //210192  ,  '126267';
-        $this->resortIds = ''; //'126267';
+        $this->hotelIDs = ''; //210192  ,  '126267';
+        $this->resortIDs = ''; //'126267';
         $this->accommodationTypes = '';
         
         $this->numberOfAdults = 2;
@@ -263,8 +263,8 @@ class SearchTest extends TestCase
         $reqData->checkOutDate = $this->checkOutDate;
         $reqData->destination = $this->destination;
         $reqData->destinationId = $this->destinationId;
-        $reqData->hotelIds = $this->hotelIds;
-        $reqData->resortIds = $this->resortIds;
+        $reqData->hotelIDs = $this->hotelIDs;
+        $reqData->resortIDs = $this->resortIDs;
         $reqData->accommodationTypes = $this->accommodationTypes;
         $reqData->numberOfRooms = $this->numberOfRooms;
         $reqData->numberOfAdults = $this->numberOfAdults;

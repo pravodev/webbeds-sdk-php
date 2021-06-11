@@ -8,13 +8,13 @@ namespace Webbeds\HotelApiSdk\Helpers\Search;
 
 use Webbeds\HotelApiSdk\Helpers\ApiHelper;
 /**
- * Class GetHotels
+ * Class GetMeals
  * @package Webbeds\HotelApiSdk\Helpers
 */
-class GetHotels extends ApiHelper
+class GetMeals extends ApiHelper
 {
     /**
-     * GetHotels constructor.
+     * GetMeals constructor.
      */
     public function __construct()
     {
@@ -22,13 +22,6 @@ class GetHotels extends ApiHelper
             "userName" => "string",
             "password" => "string",
             "language" => "string",
-            "destination" => "string",
-            "hotelIDs" => "string",
-            "resortIDs" => "string",
-            "accommodationTypes" => "string",
-            "sortBy" => "string",
-            "sortOrder" => "string",
-            "exactDestinationMatch" => "string"
         ];
     }
 }
